@@ -7,12 +7,13 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=1080 height=2340 style="width: 1080px; height: 2340px; background: #231F20"></canvas>
-    <script src="Build/MyBuildingBuild.loader.js"></script>
+    <script src="Build/MyBuilding.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/MyBuildingBuild.data.unityweb",
-        frameworkUrl: "Build/MyBuildingBuild.framework.js.unityweb",
-        codeUrl: "Build/MyBuildingBuild.wasm.unityweb",
+        dataUrl: "Build/MyBuilding.data.unityweb",
+        frameworkUrl: "Build/MyBuilding.framework.js.unityweb",
+        codeUrl: "Build/MyBuilding.wasm.unityweb",
+        symbolsUrl: "Build/MyBuilding.symbols.json.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Rye",
         productName: "BuildingView",
