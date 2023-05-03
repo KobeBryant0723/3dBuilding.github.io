@@ -10,8 +10,7 @@
 <body>
 	<div class="keepRatio">
 
-		<div id="unity-container" class="webgl-content">
-			<!--<button id="fullScreenButton" onclick="ToggleFullScreen()"></button>-->
+		<div id="unity-container" class="webgl-content"> 
 			<canvas id="gameContainer"></canvas>
 		</div> 
 		<script>
@@ -21,10 +20,7 @@
 				dataUrl: buildUrl + "/MyBuilding.data",
 				frameworkUrl: buildUrl + "/MyBuilding.framework.js",
 				codeUrl: buildUrl + "/MyBuilding.wasm",
-				streamingAssetsUrl: "StreamingAssets",
-				companyName: "CET",
-				productName: "3DView_PVStorage",
-				productVersion: "1.1.0",
+				streamingAssetsUrl: "StreamingAssets", 
 			};
 			var container = document.querySelector("#unity-container");
 			var canvas = document.querySelector("#gameContainer");
@@ -44,15 +40,7 @@
 					alert(message);
 				});
 			};
-			document.body.appendChild(script);
-										//var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%", {
-										//	onProgress: UnityProgress,
-										//	compatibilityCheck:CheckCompatibility,
-										//	Module: {
-										//		//TOTAL_MEMORY: 268435456,
-										//		onRuntimeInitialized:RuntimeInitialized,
-										//	},
-										//});
+			document.body.appendChild(script); 				 
 		</script>
 
 		<div id="loadingBlock">
